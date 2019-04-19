@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace _01_Data_Types
+namespace _01_Types
 {
     [TestClass]
     public class DataTypeExamples
