@@ -135,6 +135,37 @@ namespace _01_Data_Types
             string myName = "Joshua Tucker";
             Console.WriteLine($"I can save a value as a string and later use it when I need the value.\n" +
                 $"For example, when I need to input my name I won't have to write '{myName}' each time if it is saved as a string variable.");
+
+            //-- Inside strings we sometimes want to use characters that we cannot render in the string
+            //-- For example, how do we write " inside a quote when that's used to dictate the beginning and end of a string?
+            //-- When we want to use characters that already have a use, we use the backslash or \
+            string stringWithSpecialCharacters = "Here I have a string with a \" inside of it by using the \\";
+            Console.WriteLine(stringWithSpecialCharacters);
+
+            //-- Special characters include:
+            //-- Single Quotes: \'
+            //-- Double Quotes: \"
+            //-- Backslash: \\
+            //-- Null (not C# null, the character): \0
+            //-- Bell: \a
+            //-- Backspace: \b
+            //-- Form Feed: \f
+            //-- Newline: \n
+            //-- Carriage Return: \r
+            //-- Horizontal Tab: \t
+            //-- Verital Tab: \v
+
+            //-- Another thing we can do with C# strings is use the @ symbol to get the verbatim literal
+            //-- Verbatim literals make escape sequences translate as normal characters to enhance readability
+            //-- This is especially useful when it comes to a long collection of backslashes, such as a file path
+
+            //-- Compare this:
+            string path = "C:\\Users\\Josh\\Documents\\fileName.exe";
+            //-- To this:
+            string literalPath = @"C:\Users\Josh\Documents\fileName.exe";
+
+            Console.WriteLine($"By using the @ symbol we can clean up the readability of our strings when we need.\n" +
+                $"Both {path} and {literalPath} ouput the same value while the literal is easier to read in the code.");
         }
     }
 }
