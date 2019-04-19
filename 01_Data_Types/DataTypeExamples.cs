@@ -113,5 +113,28 @@ namespace _01_Data_Types
 
             //-- Later on we can see how this interacts with Conditionals
         }
+
+        /// <summary>
+        /// Here we cover both char and string types
+        /// </summary>
+        [TestMethod]
+        public void StringsAndChars()
+        {
+            //-- In C# we have a type called char, short for characters
+            //-- A char is a single text character and we enclose them in single quotes
+            //-- A char can include any character, be it a letter, number, symbol, and even a space
+            char letter = 'C';
+            char number = '1';
+            char symbol = '$';
+            char space = ' ';
+            Console.WriteLine($"We can use the char type to contain a single character such as {letter}, {number}, {symbol}, and even the '{space}' from a spacebar.");
+
+            //-- When we want to have more than one character together we don't want to be forced to declare every single one by itself so instead we use strings
+            //-- A string is a collection of characters (we'll come back to this concept later)
+            //-- We enclose the value of a string inside double quotes
+            string myName = "Joshua Tucker";
+            Console.WriteLine($"I can save a value as a string and later use it when I need the value.\n" +
+                $"For example, when I need to input my name I won't have to write '{myName}' each time if it is saved as a string variable.");
+        }
     }
 }
